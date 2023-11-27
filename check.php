@@ -27,6 +27,8 @@ function getDaysTillExpiry(array $certinfo)
     return $interval->format('%a');
 }
 
+$template = sprintf($template, date('Y-m-d H:i'));
+
 foreach ($domains as $domain) {
     try {
         $certinfo = getSSLCertificate($domain);
