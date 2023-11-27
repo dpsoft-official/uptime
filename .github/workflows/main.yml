@@ -34,7 +34,7 @@ jobs:
           git push
 
       - name: Send mail
-        uses: dawidd6/action-send-mail@v2
+        uses: dawidd6/action-send-mail@v3
         if: contains(env.RESULT, 'has expired')
         with:
           server_address: smtp.gmail.com
@@ -42,8 +42,9 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: SSL Certificate Expiry
-          body: file://README.md
+          html_body: file://README.md
           content_type: text/html
           convert_markdown: true
           to: ${{secrets.MAIL_USERNAME}}
           from: Github Action <${{secrets.MAIL_USERNAME}}>
+          attachments: output.txt
