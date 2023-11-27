@@ -20,7 +20,8 @@ jobs:
 
       - name: Run script
         run: |
-          echo "::set-output name=result::$(php check.php)"
+          echo "$(php check.php)" > output.txt
+          echo "RESULT=$(cat output.txt)" >> $GITHUB_ENV
 
       - name: Commit and push if it changed
         run: |
@@ -32,7 +33,7 @@ jobs:
 
       - name: Send mail
         uses: dawidd6/action-send-mail@v2
-        if: contains(steps.run_script.outputs.result, 'has expired')
+        if: contains(env.RESULT, 'has expired')
         with:
           server_address: smtp.gmail.com
           server_port: 465
