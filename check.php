@@ -2,6 +2,7 @@
 
 $domains = require_once __DIR__ . "/domains.php";
 $template = file_get_contents(__DIR__ . "/template.md");
+date_default_timezone_set('Asia/Tehran');
 
 function getSSLCertificate(string $domain)
 {
