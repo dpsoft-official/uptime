@@ -34,11 +34,15 @@ foreach ($domains as $domain) {
     try {
         $certinfo = getSSLCertificate($domain);
         $daysTillExpiry = getDaysTillExpiry($certinfo);
-        echo "The SSL certificate for " . $domain . " expires in " . $daysTillExpiry . " days" . PHP_EOL;
         $template .= sprintf("| %s     | %d Day   | %s |" . PHP_EOL, $domain, $daysTillExpiry, $daysTillExpiry > 10 ? "✅" : "❌");
+        if ($daysTillExpiry > 25) {
+            echo "The SSL certificate for " . $domain . " expires in " . $daysTillExpiry . " days" . PHP_EOL;
+        } else {
+            echo "WARNING! The SSL certificate for " . $domain . " has expired." . PHP_EOL;
+        }
     } catch (Exception $e) {
         $template .= sprintf("| %s     | %s       | %s |" . PHP_EOL, $domain, $e->getMessage(), "❌");
-        echo "Error: " . $e->getMessage() . PHP_EOL;
+        echo "ERROR! May $domain has expired: " . $e->getMessage() . PHP_EOL;
     }
 
     file_put_contents(__DIR__ . "/README.md", $template);

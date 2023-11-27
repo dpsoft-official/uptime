@@ -19,7 +19,7 @@ jobs:
           php-version: '8.2'
 
       - name: Run script
-        run: php check.php
+        run: php check.php > output.txt
 
       - name: Commit and push if it changed
         run: |
@@ -28,3 +28,18 @@ jobs:
           git config --global user.name "GitHub Action"
           git commit -am "Update README.md" || exit 0
           git push
+
+      - name: Send mail
+        uses: dawidd6/action-send-mail@v2
+        if: contains(steps.run_script.outputs.result, 'has expired')
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
+          subject: SSL Certificate Expiry
+          body: file://README.md
+          content_type: text/html
+          convert_markdown: true
+          to: ${{secrets.MAIL_USERNAME}}
+          from: Github Action <${{secrets.MAIL_USERNAME}}>
