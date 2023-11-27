@@ -21,7 +21,9 @@ jobs:
       - name: Run script
         run: |
           echo "$(php check.php)" > output.txt
-          echo "RESULT=$(cat output.txt)" >> $GITHUB_ENV
+          echo "RESULT<<EOF" >> $GITHUB_ENV
+          cat output.txt >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
 
       - name: Commit and push if it changed
         run: |
