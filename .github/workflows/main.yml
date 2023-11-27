@@ -42,9 +42,7 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: SSL Certificate Expiry
-          html_body: file://README.md
-          content_type: text/html
+          html_body: file://output.txt
           convert_markdown: true
           to: ${{secrets.MAIL_USERNAME}}
           from: Github Action <${{secrets.MAIL_USERNAME}}>
-          attachments: output.txt
