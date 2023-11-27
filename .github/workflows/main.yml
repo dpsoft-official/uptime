@@ -19,7 +19,8 @@ jobs:
           php-version: '8.2'
 
       - name: Run script
-        run: php check.php
+        run: |
+          echo "::set-output name=result::$(php check.php)"
 
       - name: Commit and push if it changed
         run: |
