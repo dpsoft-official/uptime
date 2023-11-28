@@ -9,6 +9,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      EXPIRATION_LIMIT: 7
+      DOMAINS: 'dpe.ac,dpedu.ir,dpgoal.com,dpmaharat.com,borhanbs.ir,danesh-online.com,ava-crm.ir,darkoobjob.ir,mettis.ir,liaan.ir'
 
     steps:
       - uses: actions/checkout@v2
@@ -35,7 +38,7 @@ jobs:
 
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
-        if: contains(env.RESULT, 'has expired')
+        if: contains(env.RESULT, 'expired')
         with:
           server_address: smtp.gmail.com
           server_port: 465
