@@ -1,16 +1,16 @@
 # SSL expiration monitoring
 
-**Checked on 2025-05-04 04:54**
+**Checked on 2025-05-05 04:50**
 
 | Domain | Remained | Status       |
 |--------|----------|--------------|
-| dpe.ac     | 45 Day   | ✅ |
-| dpedu.ir     | 46 Day   | ✅ |
-| dpgoal.com     | 19 Day   | ✅ |
-| dpmaharat.com     | 32 Day   | ✅ |
-| borhanbs.ir     | 45 Day   | ✅ |
-| danesh-online.com     | 46 Day   | ✅ |
-| ava-crm.ir     | 45 Day   | ✅ |
-| darkoobjob.ir     | 71 Day   | ✅ |
-| mettis.ir     | 26 Day   | ✅ |
-| liaan.ir     | 30 Day   | ✅ |
+| dpe.ac     | 44 Day   | ✅ |
+| dpedu.ir     | 45 Day   | ✅ |
+| dpgoal.com     | 18 Day   | ✅ |
+| dpmaharat.com     | 31 Day   | ✅ |
+| borhanbs.ir     | 44 Day   | ✅ |
+| danesh-online.com     | 45 Day   | ✅ |
+| ava-crm.ir     | 44 Day   | ✅ |
+| darkoobjob.ir     | 70 Day   | ✅ |
+| mettis.ir     | 25 Day   | ✅ |
+| liaan.ir     | 29 Day   | ✅ |
