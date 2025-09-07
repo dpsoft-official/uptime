@@ -36,16 +36,16 @@ jobs:
           git commit -am "Update README.md" || exit 0
           git push
 
-      - name: Send mail
-        uses: dawidd6/action-send-mail@v3
-        if: contains(env.RESULT, 'expired')
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
-          subject: SSL Certificate Expiry
-          html_body: file://output.txt
-          convert_markdown: true
-          to: ${{secrets.MAIL_USERNAME}}
-          from: Github Action <${{secrets.MAIL_USERNAME}}>
+      # - name: Send mail
+      #   uses: dawidd6/action-send-mail@v3
+      #   if: contains(env.RESULT, 'expired')
+      #   with:
+      #     server_address: smtp.gmail.com
+      #     server_port: 465
+      #     username: ${{secrets.MAIL_USERNAME}}
+      #     password: ${{secrets.MAIL_PASSWORD}}
+      #     subject: SSL Certificate Expiry
+      #     html_body: file://output.txt
+      #     convert_markdown: true
+      #     to: ${{secrets.MAIL_USERNAME}}
+      #     from: Github Action <${{secrets.MAIL_USERNAME}}>
