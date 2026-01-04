@@ -1,16 +1,16 @@
 # SSL expiration monitoring
 
-**Checked on 2026-01-03 04:50**
+**Checked on 2026-01-04 05:12**
 
 | Domain | Remained | Status       |
 |--------|----------|--------------|
-| dpe.ac     | 51 Day   | ✅ |
-| dpedu.ir     | 53 Day   | ✅ |
+| dpe.ac     | 50 Day   | ✅ |
+| dpedu.ir     | 52 Day   | ✅ |
 | dpgoal.com     | Failed to connect: php_network_getaddresses: getaddrinfo for dpgoal.com failed: Name or service not known (0)       | ❌ |
-| dpmaharat.com     | 39 Day   | ✅ |
-| borhanbs.ir     | 51 Day   | ✅ |
-| danesh-online.com     | 54 Day   | ✅ |
-| ava-crm.ir     | 52 Day   | ✅ |
-| darkoobjob.ir     | 79 Day   | ✅ |
-| mettis.ir     | 33 Day   | ✅ |
-| liaan.ir     | 37 Day   | ✅ |
+| dpmaharat.com     | 38 Day   | ✅ |
+| borhanbs.ir     | 50 Day   | ✅ |
+| danesh-online.com     | 53 Day   | ✅ |
+| ava-crm.ir     | 51 Day   | ✅ |
+| darkoobjob.ir     | 78 Day   | ✅ |
+| mettis.ir     | 32 Day   | ✅ |
+| liaan.ir     | 36 Day   | ✅ |
