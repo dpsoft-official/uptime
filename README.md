@@ -1,16 +1,16 @@
 # SSL expiration monitoring
 
-**Checked on 2026-02-11 05:35**
+**Checked on 2026-02-12 05:28**
 
 | Domain | Remained | Status       |
 |--------|----------|--------------|
-| dpe.ac     | 12 Day   | ✅ |
-| dpedu.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for dpedu.ir failed: Temporary failure in name resolution (0)       | ❌ |
+| dpe.ac     | 11 Day   | ✅ |
+| dpedu.ir     | 13 Day   | ✅ |
 | dpgoal.com     | Failed to connect: php_network_getaddresses: getaddrinfo for dpgoal.com failed: Name or service not known (0)       | ❌ |
-| dpmaharat.com     | Failed to connect: php_network_getaddresses: getaddrinfo for dpmaharat.com failed: Temporary failure in name resolution (0)       | ❌ |
-| borhanbs.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for borhanbs.ir failed: Temporary failure in name resolution (0)       | ❌ |
-| danesh-online.com     | 15 Day   | ✅ |
-| ava-crm.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for ava-crm.ir failed: Temporary failure in name resolution (0)       | ❌ |
-| darkoobjob.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for darkoobjob.ir failed: Temporary failure in name resolution (0)       | ❌ |
-| mettis.ir     | 69 Day   | ✅ |
-| liaan.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for liaan.ir failed: Temporary failure in name resolution (0)       | ❌ |
+| dpmaharat.com     | 83 Day   | ✅ |
+| borhanbs.ir     | 11 Day   | ✅ |
+| danesh-online.com     | 14 Day   | ✅ |
+| ava-crm.ir     | 12 Day   | ✅ |
+| darkoobjob.ir     | 39 Day   | ✅ |
+| mettis.ir     | 68 Day   | ✅ |
+| liaan.ir     | 72 Day   | ✅ |
