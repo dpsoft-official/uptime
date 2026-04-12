@@ -1,16 +1,16 @@
 # SSL expiration monitoring
 
-**Checked on 2026-04-11 05:31**
+**Checked on 2026-04-12 05:52**
 
 | Domain | Remained | Status       |
 |--------|----------|--------------|
-| dpe.ac     | 37 Day   | ✅ |
-| dpedu.ir     | 39 Day   | ✅ |
+| dpe.ac     | Failed to connect: php_network_getaddresses: getaddrinfo for dpe.ac failed: Temporary failure in name resolution (0)       | ❌ |
+| dpedu.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for dpedu.ir failed: Temporary failure in name resolution (0)       | ❌ |
 | dpgoal.com     | Failed to connect: php_network_getaddresses: getaddrinfo for dpgoal.com failed: Name or service not known (0)       | ❌ |
-| dpmaharat.com     | 25 Day   | ✅ |
-| borhanbs.ir     | 37 Day   | ✅ |
-| danesh-online.com     | 39 Day   | ✅ |
-| ava-crm.ir     | 38 Day   | ✅ |
-| darkoobjob.ir     | 56 Day   | ✅ |
-| mettis.ir     | 81 Day   | ✅ |
-| liaan.ir     | 84 Day   | ✅ |
+| dpmaharat.com     | Failed to connect: php_network_getaddresses: getaddrinfo for dpmaharat.com failed: Temporary failure in name resolution (0)       | ❌ |
+| borhanbs.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for borhanbs.ir failed: Temporary failure in name resolution (0)       | ❌ |
+| danesh-online.com     | Failed to connect: php_network_getaddresses: getaddrinfo for danesh-online.com failed: Temporary failure in name resolution (0)       | ❌ |
+| ava-crm.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for ava-crm.ir failed: Temporary failure in name resolution (0)       | ❌ |
+| darkoobjob.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for darkoobjob.ir failed: Temporary failure in name resolution (0)       | ❌ |
+| mettis.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for mettis.ir failed: Temporary failure in name resolution (0)       | ❌ |
+| liaan.ir     | Failed to connect: php_network_getaddresses: getaddrinfo for liaan.ir failed: Temporary failure in name resolution (0)       | ❌ |
